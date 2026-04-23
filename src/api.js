@@ -1,18 +1,16 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: '/api',
+  baseURL: import.meta.env.VITE_API_URL || '/api',
   headers: { 'Content-Type': 'application/json' },
 });
 
-// Inyectar token en cada request
 api.interceptors.request.use((config) => {
   const token = localStorage.getItem('token');
   if (token) config.headers.Authorization = `Bearer ${token}`;
   return config;
 });
 
-// Exportar la instancia para que AuthContext también la use
 export default api;
 
 export const createRegistration = (data) => api.post('/registrations', data);
