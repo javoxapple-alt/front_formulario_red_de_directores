@@ -1,0 +1,314 @@
+.list-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.stats-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.stat-card {
+  display: flex;
+  flex-direction: column;
+  padding: 14px 20px;
+  border-radius: var(--radius);
+  min-width: 120px;
+}
+
+.stat-card.total {
+  background: linear-gradient(135deg, var(--blue-700), var(--blue-500));
+  color: white;
+  box-shadow: 0 4px 16px rgba(30, 79, 194, 0.35);
+}
+
+.stat-card.area-stat {
+  background: white;
+  border-left: 4px solid var(--area-color, var(--blue-500));
+  box-shadow: var(--shadow);
+}
+
+.stat-number {
+  font-family: 'Sora', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  opacity: 0.8;
+  margin-top: 4px;
+  font-weight: 500;
+}
+
+.list-controls {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.search-input {
+  flex: 1;
+  min-width: 200px;
+  padding: 11px 16px;
+  border: 2px solid var(--gray-200);
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.2s;
+  background: white;
+}
+
+.search-input:focus { border-color: var(--blue-400); }
+
+.filter-select {
+  padding: 11px 40px 11px 16px;
+  border: 2px solid var(--gray-200);
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  outline: none;
+  appearance: none;
+  background: white url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%231a3a8a' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat right 14px center;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.filter-select:focus { border-color: var(--blue-400); }
+
+.table-scroll {
+  overflow-x: auto;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  background: white;
+}
+
+.participants-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.participants-table thead {
+  background: linear-gradient(135deg, var(--blue-800), var(--blue-700));
+}
+
+.participants-table thead th {
+  padding: 14px 16px;
+  text-align: left;
+  color: white;
+  font-family: 'Sora', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.participants-table tbody tr {
+  border-bottom: 1px solid var(--gray-200);
+  transition: background 0.15s;
+}
+
+.participants-table tbody tr:hover { background: #f8faff; }
+.participants-table tbody tr:last-child { border-bottom: none; }
+
+.participants-table td {
+  padding: 13px 16px;
+  vertical-align: middle;
+}
+
+.td-num {
+  color: var(--gray-400);
+  font-weight: 700;
+  font-size: 0.8rem;
+  width: 40px;
+}
+
+.td-name {
+  font-weight: 600;
+  color: var(--blue-800);
+  white-space: nowrap;
+}
+
+.td-mono {
+  font-family: monospace;
+  font-size: 0.85rem;
+  color: var(--gray-600);
+}
+
+.cargo-tag {
+  display: inline-block;
+  background: var(--gray-200);
+  color: var(--gray-600);
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.area-tag {
+  display: inline-block;
+  background: color-mix(in srgb, var(--area-color) 12%, white);
+  color: var(--area-color);
+  border: 1.5px solid color-mix(in srgb, var(--area-color) 30%, white);
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.td-sede {
+  font-size: 0.82rem;
+  color: var(--gray-600);
+  max-width: 200px;
+}
+
+.td-contact {
+  display: flex;
+  gap: 8px;
+}
+
+.td-contact a {
+  font-size: 1rem;
+  opacity: 0.6;
+  transition: opacity 0.15s;
+  cursor: pointer;
+}
+
+.td-contact a:hover { opacity: 1; }
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: var(--error);
+  opacity: 0.4;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 6px;
+  transition: opacity 0.15s, background 0.15s;
+}
+
+.delete-btn:hover { opacity: 1; background: #fee2e2; }
+
+.loading-state,
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 60px 20px;
+  background: white;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  color: var(--gray-400);
+}
+
+.loader {
+  width: 36px;
+  height: 36px;
+  border: 3px solid var(--gray-200);
+  border-top-color: var(--blue-500);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.empty-icon { font-size: 2.5rem; }
+
+.list-footer {
+  font-size: 0.82rem;
+  color: var(--gray-400);
+  text-align: right;
+  padding: 4px 0;
+}
+
+/* ── EXPORT BUTTON ── */
+.export-btn {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 10px 18px;
+  background: linear-gradient(135deg, #059669, #047857);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 0.875rem;
+  font-weight: 600;
+  font-family: 'Sora', sans-serif;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: opacity .15s, transform .1s;
+  box-shadow: 0 3px 12px rgba(5, 150, 105, 0.35);
+}
+
+.export-btn:hover:not(:disabled) {
+  opacity: .9;
+  transform: translateY(-1px);
+}
+
+.export-btn:disabled {
+  opacity: .55;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.export-spinner {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 2px solid rgba(255,255,255,.35);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+.export-btn-sm {
+  background: none;
+  border: 1.5px solid #059669;
+  color: #059669;
+  font-size: 0.78rem;
+  font-weight: 600;
+  font-family: 'Sora', sans-serif;
+  padding: 4px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-left: 12px;
+  transition: background .15s, color .15s;
+}
+
+.export-btn-sm:hover { background: #059669; color: white; }
+.export-btn-sm:disabled { opacity: .5; cursor: not-allowed; }
+
+/* Establecimiento con tag de comuna */
+.td-colegio {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.td-colegio span:first-child {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+.comuna-mini {
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 1px 6px;
+  border-radius: 20px;
+  display: inline-block;
+  width: fit-content;
+}
+
+.tag-ah  { background: #dbeafe; color: #1d4ed8; }
+.tag-iq  { background: #dcfce7; color: #166534; }
+.tag-otro{ background: #f3f4f6; color: #6b7280; }
