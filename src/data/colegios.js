@@ -16,11 +16,14 @@ const COLEGIOS = [
   { nombre: 'Colegio Sagrado Corazón de Jesús', comuna: 'Alto Hospicio' },
   { nombre: 'Colegio San Antonio de Matilla', comuna: 'Alto Hospicio' },
   { nombre: 'Colegio San Pedro', comuna: 'Alto Hospicio' },
+  { nombre: 'Liceo Pablo Neruda', comuna: 'Alto Hospicio' },
+  { nombre: 'Colegio Rupanic', comuna: 'Alto Hospicio' },
   { nombre: 'Escuela de Lenguaje Pucará', comuna: 'Alto Hospicio' },
   { nombre: 'Escuela El Inca', comuna: 'Alto Hospicio' },
   { nombre: 'Escuela Santa Rosa', comuna: 'Alto Hospicio' },
   { nombre: 'Liceo Bicentenario Alto Hospicio', comuna: 'Alto Hospicio' },
   { nombre: 'Liceo Jorge Alessandri Rodríguez', comuna: 'Alto Hospicio' },
+
 
   // ── IQUIQUE ──────────────────────────────────────────────
   { nombre: 'Academia Nerudiana', comuna: 'Iquique' },
