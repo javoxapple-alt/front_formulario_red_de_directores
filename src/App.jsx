@@ -96,10 +96,10 @@ function RegisterPage({ onSuccess }) {
                 ['Convivencia Educativa',      'C. Bicentenario William Taylor'],
                 ['PIE',                         'C. Bicentenario Nirvana'],
                 ['Docentes y Coordinadores TP', 'C. Domingo Savio'],
-                ['Educ. Parvularia',            'C. Bicentenario Kronos'],
+                ['Educ. Parvularia',            'C. Metodista Robert Johnson'],
                 ['Inglés',                      'C. Monte Carmelo'],
                 ['PISE',                        'C. Metodista Robert Johnson'],
-                ['UTP/Equipos Técnicos',        'C. Metodista Robert Johnson'],
+                ['UTP/Equipos Técnicos',        'C. Bicentenario Kronos'],
                 ['Coordinadores Extraescolar',  'C. Marista Hermano Fernando'],
               ].map(([area, sede]) => (
                 <li key={area}>
