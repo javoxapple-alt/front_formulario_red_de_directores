@@ -23,6 +23,7 @@ const COLEGIOS = [
   { nombre: 'Escuela Santa Rosa', comuna: 'Alto Hospicio' },
   { nombre: 'Liceo Bicentenario Alto Hospicio', comuna: 'Alto Hospicio' },
   { nombre: 'Liceo Jorge Alessandri Rodríguez', comuna: 'Alto Hospicio' },
+  { nombre: 'Colegio Maranatha', comuna: 'Alto Hospicio' },
 
 
   // ── IQUIQUE ──────────────────────────────────────────────
