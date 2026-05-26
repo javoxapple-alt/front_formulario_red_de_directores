@@ -3,6 +3,7 @@ const COLEGIOS = [
   // ── ALTO HOSPICIO ───────────────────────────────────────
   { nombre: 'Academia Nacional', comuna: 'Alto Hospicio' },
   { nombre: 'Colegio Bicentenario Kronos', comuna: 'Alto Hospicio' },
+  { nombre: "Colegio Alturas", comuna: "Alto Hospicio" },
   { nombre: 'Colegio Bicentenario Nirvana', comuna: 'Alto Hospicio' },
   { nombre: 'Colegio Bicentenario William Taylor', comuna: 'Alto Hospicio' },
   { nombre: 'Colegio Diego Portales', comuna: 'Alto Hospicio' },
