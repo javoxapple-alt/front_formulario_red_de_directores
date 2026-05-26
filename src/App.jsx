@@ -29,9 +29,9 @@ function Header() {
           <div className="brand-icon">
             <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" width="40" height="40">
               <circle cx="20" cy="20" r="20" fill="#1e4fc2" />
-              <path d="M12 15h16M12 20h10M12 25h13" stroke="#f5bf40" strokeWidth="2.5" strokeLinecap="round"/>
+              <path d="M12 15h16M12 20h10M12 25h13" stroke="#f5bf40" strokeWidth="2.5" strokeLinecap="round" />
               <circle cx="28" cy="24" r="5" fill="#f5bf40" />
-              <path d="M26 24l1.5 1.5L30 22" stroke="#1e4fc2" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M26 24l1.5 1.5L30 22" stroke="#1e4fc2" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </div>
           <div>
@@ -40,7 +40,7 @@ function Header() {
           </div>
         </div>
         <div className="header-date">
-          <span className="date-badge">📅 29 de Abril · 14:30 – 17:00 hrs</span>
+          <span className="date-badge">📅 28 de Mayo · 14:30 – 17:00 hrs</span>
         </div>
       </div>
 
@@ -82,7 +82,7 @@ function RegisterPage({ onSuccess }) {
           <div className="event-details">
             <div className="detail-item">
               <span className="detail-icon">📅</span>
-              <div><strong>Fecha</strong><span>29 de Abril, 2026</span></div>
+              <div><strong>Fecha</strong><span>28 de Mayo</span></div>
             </div>
             <div className="detail-item">
               <span className="detail-icon">🕐</span>
@@ -93,14 +93,15 @@ function RegisterPage({ onSuccess }) {
             <h3>Áreas disponibles</h3>
             <ul>
               {[
-                ['Convivencia Educativa',      'C. Bicentenario William Taylor'],
-                ['PIE',                         'C. Bicentenario Nirvana'],
-                ['Docentes y Coordinadores TP', 'C. Domingo Savio'],
-                ['Educ. Parvularia',            'C. Metodista Robert Johnson'],
-                ['Inglés',                      'C. Monte Carmelo'],
-                ['PISE',                        'C. Metodista Robert Johnson'],
-                ['UTP/Equipos Técnicos',        'C. Bicentenario Kronos'],
-                ['Coordinadores Extraescolar',  'C. Marista Hermano Fernando'],
+                ['Convivencia Educativa', 'C. Bicentenario William Taylor'],
+                ['PIE', 'C. Monte Carmelo'],
+                ['Docentes y Coordinadores TP', 'C. Bicentenario Kronos'],
+                ['Educ. Parvularia', 'C. Domingo Savio'],
+                ['Inglés', 'Liceo Bicentenario Juan Pablo Segundo'],
+                ['PISE', 'C. Metodista Robert Johnson'],
+                ['UTP/Equipos Técnicos', 'C. Metodista Robert Johnson'],
+                ['Coordinadores Extraescolar', 'C. Marista Hermano Fernando'],
+                ['Directores y Directoras', 'C. Los Cóndores'],
               ].map(([area, sede]) => (
                 <li key={area}>
                   <span className="area-dot" />
