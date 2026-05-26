@@ -48,7 +48,7 @@ function buildResumenSheet(wb, registrations) {
   // Subtítulo fecha
   ws.mergeCells('A2:F2');
   const fecha = ws.getCell('A2');
-  fecha.value     = '29 de Abril de 2026  ·  14:30 – 17:00 hrs';
+  fecha.value     = '28 de Mayo de 2026  ·  14:30 – 17:00 hrs';
   fecha.font      = { name: 'Arial', size: 11, color: { argb: AZUL_OSCURO } };
   fecha.fill      = { type: 'pattern', pattern: 'solid', fgColor: { argb: 'FFFEF3C7' } };
   fecha.alignment = { horizontal: 'center', vertical: 'middle' };
