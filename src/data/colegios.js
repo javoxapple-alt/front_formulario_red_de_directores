@@ -18,6 +18,7 @@ const COLEGIOS = [
   { nombre: 'Colegio San Antonio de Matilla', comuna: 'Alto Hospicio' },
   { nombre: 'Colegio San Pedro', comuna: 'Alto Hospicio' },
   { nombre: 'Liceo Pablo Neruda', comuna: 'Alto Hospicio' },
+  { nombre: 'Colegio Simón Bolívar', comuna: 'Alto Hospicio' },
   { nombre: 'Colegio Rupanic', comuna: 'Alto Hospicio' },
   { nombre: 'Escuela de Lenguaje Pucará', comuna: 'Alto Hospicio' },
   { nombre: 'Escuela El Inca', comuna: 'Alto Hospicio' },
