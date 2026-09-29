@@ -227,3 +227,5 @@
   .reg-form   { padding: 24px 20px; }
   .form-header{ padding: 24px 20px; }
 }
+
+.sede-taller { display: block; margin-top: 4px; font-size: 0.8rem; font-style: italic; opacity: 0.85; }

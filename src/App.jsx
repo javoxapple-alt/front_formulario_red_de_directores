@@ -35,12 +35,12 @@ function Header() {
             </svg>
           </div>
           <div>
-            <h1 className="brand-title">I Encuentro de la Red</h1>
+            <h1 className="brand-title">IV Encuentro de la Red</h1>
             <p className="brand-sub">Red de Colegios de Alto Hospicio · 2026</p>
           </div>
         </div>
         <div className="header-date">
-          <span className="date-badge">📅 30 de Junio · 14:30 – 17:00 hrs</span>
+          <span className="date-badge">📅 Jueves 29 de Octubre · 14:30 – 17:00 hrs</span>
         </div>
       </div>
       <nav className="app-nav">
@@ -70,15 +70,15 @@ function Header() {
 }
 
 const AREAS_INFO = [
-  { area: 'Convivencia Educativa',       sede: 'C. Metodista Robert Johnson',    icon: '🤝' },
-  { area: 'PIE',                          sede: 'C. Católico Nazaret',            icon: '♿' },
-  { area: 'Docentes y Coordinadores TP', sede: 'Liceo Bicentenario Nirvana',     icon: '🏫' },
-  { area: 'Educ. Parvularia',            sede: 'C. San Antonio de Matilla',      icon: '🌱' },
-  { area: 'Inglés',                      sede: 'Liceo Bicentenario Kronos',      icon: '🌐' },
-  { area: 'UTP/Equipos Técnicos',        sede: 'C. Bicentenario William Taylor', icon: '⚙️' },
-  { area: 'Coordinadores Extraescolar',  sede: 'C. Marista Hermano Fernando',    icon: '🎯' },
-  { area: 'Directores y Directoras',     sede: 'C. Bicentenario William Taylor', icon: '👔' },
-  { area: 'CGPA',                        sede: 'C. Rupanic School · 08:30 hrs',  icon: '⭐' },
+  { area: 'Convivencia Educativa',       sede: 'C. Metodista Robert Johnson',                  taller: '2º taller con Dr. Francisco Leal (UTA)',                                  icon: '🤝' },
+  { area: 'PIE',                          sede: 'C. Bicentenario William Taylor',               taller: 'Taller equipo PIE Colegio Nazaret',                                     icon: '♿' },
+  { area: 'Docentes y Coordinadores TP', sede: 'C. Marista Hermano Fernando',                  taller: 'Formación e inducción en la metodología A+S',                           icon: '🏫' },
+  { area: 'Educ. Parvularia',            sede: 'C. Católico Nazaret',                                                                                                          icon: '🌱' },
+  { area: 'Inglés',                      sede: 'Liceo Bicentenario Sagrado Corazón de Jesús',                                                                                  icon: '🌐' },
+  { area: 'UTP/Equipos Técnicos',        sede: 'Liceo Bicentenario Nirvana',                   taller: 'Capacitación "Enfoque Docente y Aprendizaje Profundo" – Agencia de Calidad', icon: '⚙️' },
+  { area: 'Coordinadores Extraescolar',  sede: 'C. Monte Carmelo',                                                                                                             icon: '🎯' },
+  { area: 'Directores y Directoras',     sede: 'C. Reina del Desierto',                                                                                                        icon: '👔' },
+  { area: 'CGPA',                        sede: 'C. Bicentenario Kronos · 08:30 hrs',                                                                                           icon: '⭐' },
 ];
 
 function RegisterPage({ onSuccess }) {
@@ -103,7 +103,7 @@ function RegisterPage({ onSuccess }) {
           <div className="event-details">
             <div className="detail-item">
               <div className="detail-icon-wrap">📅</div>
-              <div><strong>Fecha</strong><span>30 de Junio, 2026</span></div>
+              <div><strong>Fecha</strong><span>Jueves 29 de Octubre, 2026</span></div>
             </div>
             <div className="detail-item">
               <div className="detail-icon-wrap">🕐</div>
@@ -115,12 +115,13 @@ function RegisterPage({ onSuccess }) {
           <div className="areas-preview">
             <h3>Áreas y sedes</h3>
             <ul>
-              {AREAS_INFO.map(({ area, sede, icon }) => (
+              {AREAS_INFO.map(({ area, sede, taller, icon }) => (
                 <li key={area} className="area-item">
                   <span className="area-item-icon">{icon}</span>
                   <div>
                     <strong>{area}</strong>
                     <small>{sede}</small>
+                    {taller && <small className="area-taller">{taller}</small>}
                   </div>
                 </li>
               ))}
@@ -145,7 +146,7 @@ function ParticipantsPage({ refreshKey }) {
     <div className="page-single">
       <div className="page-title-bar">
         <h2>Participantes registrados</h2>
-        <p>Listado completo de inscritos al I Encuentro de la Red 2026</p>
+        <p>Listado completo de inscritos al IV Encuentro de la Red 2026</p>
       </div>
       <ParticipantsList refreshKey={refreshKey} />
     </div>

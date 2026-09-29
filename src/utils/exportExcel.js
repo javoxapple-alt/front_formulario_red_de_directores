@@ -39,7 +39,7 @@ function buildResumenSheet(wb, registrations) {
   // Título principal
   ws.mergeCells('A1:F1');
   const titulo = ws.getCell('A1');
-  titulo.value     = 'I ENCUENTRO DE LA RED 2026 — RED DE COLEGIOS DE ALTO HOSPICIO';
+  titulo.value     = 'IV ENCUENTRO DE LA RED 2026 — RED DE COLEGIOS DE ALTO HOSPICIO';
   titulo.font      = { name: 'Arial', bold: true, size: 14, color: { argb: BLANCO } };
   titulo.fill      = { type: 'pattern', pattern: 'solid', fgColor: { argb: AZUL_OSCURO } };
   titulo.alignment = { horizontal: 'center', vertical: 'middle' };
@@ -48,7 +48,7 @@ function buildResumenSheet(wb, registrations) {
   // Subtítulo fecha
   ws.mergeCells('A2:F2');
   const fecha = ws.getCell('A2');
-  fecha.value     = '28 de Mayo de 2026  ·  14:30 – 17:00 hrs';
+  fecha.value     = 'Jueves 29 de Octubre de 2026  ·  14:30 – 17:00 hrs';
   fecha.font      = { name: 'Arial', size: 11, color: { argb: AZUL_OSCURO } };
   fecha.fill      = { type: 'pattern', pattern: 'solid', fgColor: { argb: 'FFFEF3C7' } };
   fecha.alignment = { horizontal: 'center', vertical: 'middle' };
@@ -134,7 +134,7 @@ function buildColegioSheet(wb, colegio, lista, numero) {
   // Info de la hoja
   ws.mergeCells('A2:H2');
   const info = ws.getCell('A2');
-  info.value     = `${lista.length} participante${lista.length !== 1 ? 's' : ''} registrado${lista.length !== 1 ? 's' : ''}  ·  I Encuentro de la Red 2026`;
+  info.value     = `${lista.length} participante${lista.length !== 1 ? 's' : ''} registrado${lista.length !== 1 ? 's' : ''}  ·  IV Encuentro de la Red 2026`;
   info.font      = { name: 'Arial', size: 10, italic: true, color: { argb: AZUL_OSCURO } };
   info.fill      = { type: 'pattern', pattern: 'solid', fgColor: { argb: AZUL_CLARO } };
   info.alignment = { horizontal: 'center', vertical: 'middle' };
@@ -224,7 +224,7 @@ export async function exportarParticipantes(registrations) {
   const url    = URL.createObjectURL(blob);
   const a      = document.createElement('a');
   a.href       = url;
-  a.download   = `participantes_encuentro_red_2026_${new Date().toISOString().slice(0,10)}.xlsx`;
+  a.download   = `participantes_iv_encuentro_red_2026_${new Date().toISOString().slice(0,10)}.xlsx`;
   a.click();
   URL.revokeObjectURL(url);
 }

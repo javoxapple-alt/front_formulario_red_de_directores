@@ -22,6 +22,7 @@ function formatRut(value) {
 export default function RegistrationForm({ onSuccess }) {
   const [loading, setLoading] = useState(false);
   const [sede, setSede] = useState('');
+  const [taller, setTaller] = useState('');
   const [form, setForm] = useState({
     nombreCompleto: '',
     rut: '',
@@ -44,6 +45,7 @@ export default function RegistrationForm({ onSuccess }) {
     if (name === 'area') {
       const found = AREAS.find((a) => a.nombre === value);
       setSede(found ? found.sede : '');
+      setTaller(found?.taller || '');
     }
 
     if (name === 'colegioOrigen') {
@@ -70,6 +72,7 @@ export default function RegistrationForm({ onSuccess }) {
       toast.success('¡Registro exitoso! Te esperamos el 30 de junio 🎉');
       setForm({ nombreCompleto:'', rut:'', email:'', telefono:'', colegioOrigen:'', comunaOrigen:'', cargo:'', area:'' });
       setSede('');
+      setTaller('');
       onSuccess?.();
     } catch (err) {
       toast.error(err.response?.data?.message || 'Error al registrar. Intenta nuevamente.');
@@ -180,6 +183,7 @@ export default function RegistrationForm({ onSuccess }) {
                 <div>
                   <span className="sede-label">Tu sede asignada:</span>
                   <span className="sede-name">{sede}</span>
+                  {taller && <span className="sede-taller">🎓 {taller}</span>}
                 </div>
               </div>
             </div>
