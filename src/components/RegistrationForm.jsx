@@ -69,7 +69,7 @@ export default function RegistrationForm({ onSuccess }) {
     setLoading(true);
     try {
       await createRegistration(form);
-      toast.success('¡Registro exitoso! Te esperamos el 30 de junio 🎉');
+      toast.success('¡Registro exitoso! Te esperamos el jueves 29 de octubre 🎉');
       setForm({ nombreCompleto:'', rut:'', email:'', telefono:'', colegioOrigen:'', comunaOrigen:'', cargo:'', area:'' });
       setSede('');
       setTaller('');

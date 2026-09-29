@@ -1,3 +1,4 @@
+import AREAS from '../data/areas';
 import { useState, useEffect, useCallback } from 'react';
 import toast from 'react-hot-toast';
 import { getRegistrations, getStats, deleteRegistration } from '../api';
@@ -6,7 +7,7 @@ import './ParticipantsList.css';
 
 const AREA_COLORS = [
   '#1e4fc2','#7c3aed','#db2777','#d97706',
-  '#059669','#0284c7','#dc2626','#047857',
+  '#059669','#0284c7','#dc2626','#047857','#b45309',
 ];
 
 export default function ParticipantsList({ refreshKey }) {
@@ -77,11 +78,7 @@ export default function ParticipantsList({ refreshKey }) {
   );
 
   const getAreaColor = (area) => {
-    const ALL_AREAS = [
-      'Convivencia Educativa','PIE','Docentes y Coordinadores TP',
-      'Educ. Parvularia','Inglés','PISE','UTP/Equipos Técnicos','Coordinadores Extraescolar',
-    ];
-    const idx = ALL_AREAS.indexOf(area);
+    const idx = AREAS.findIndex((a) => a.nombre === area);
     return AREA_COLORS[idx >= 0 ? idx : 0];
   };
 

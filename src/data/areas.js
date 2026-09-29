@@ -1,13 +1,13 @@
 const AREAS = [
-  { nombre: 'Convivencia Educativa',       sede: 'Colegio Metodista Robert Johnson',          taller: '2º taller con Doctor Francisco Leal (UTA)' },
-  { nombre: 'PIE',                          sede: 'Colegio Bicentenario William Taylor',       taller: 'Taller equipo PIE Colegio Nazaret' },
-  { nombre: 'Docentes y Coordinadores TP', sede: 'Colegio Marista Hermano Fernando',          taller: 'Talleres de formación e inducción en la metodología A+S' },
-  { nombre: 'Educ. Parvularia',            sede: 'Colegio Católico Nazaret' },
-  { nombre: 'Inglés',                      sede: 'Liceo Bicentenario Sagrado Corazón de Jesús' },
-  { nombre: 'UTP/Equipos Técnicos',        sede: 'Liceo Bicentenario Nirvana',                taller: 'Taller de capacitación "Enfoque Docente y Aprendizaje Profundo" – Agencia de Calidad' },
-  { nombre: 'Coordinadores Extraescolar',  sede: 'Colegio Monte Carmelo' },
-  { nombre: 'Directores y Directoras',     sede: 'Colegio Reina del Desierto' },
-  { nombre: 'CGPA',                        sede: 'Colegio Bicentenario Kronos (08:30 hrs)' },
+  { nombre: 'Convivencia Educativa',       sede: 'Colegio Metodista Robert Johnson' },
+  { nombre: 'PIE',                          sede: 'Colegio Católico Nazaret' },
+  { nombre: 'Docentes y Coordinadores TP', sede: 'Liceo Bicentenario Nirvana' },
+  { nombre: 'Educ. Parvularia',            sede: 'Colegio San Antonio de Matilla' },
+  { nombre: 'Inglés',                      sede: 'Liceo Bicentenario Kronos' },
+  { nombre: 'UTP/Equipos Técnicos',        sede: 'Colegio Bicentenario William Taylor' },
+  { nombre: 'Coordinadores Extraescolar',  sede: 'Colegio Marista Hermano Fernando' },
+  { nombre: 'Directores y Directoras',     sede: 'Colegio Bicentenario William Taylor' },
+  { nombre: 'CGPA',                        sede: 'Colegio Rupanic School' },
 ];
 
 export default AREAS;
