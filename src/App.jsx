@@ -71,11 +71,11 @@ function Header() {
 
 const AREAS_INFO = [
   { area: 'Convivencia Educativa',       sede: 'C. Metodista Robert Johnson',                  taller: '2º taller con Dr. Francisco Leal (UTA)',                                  icon: '🤝' },
-  { area: 'PIE',                          sede: 'C. Bicentenario William Taylor',               taller: 'Taller equipo PIE Colegio Nazaret',                                     icon: '♿' },
+  { area: 'PIE',                          sede: 'C. Bicentenario William Taylor',               taller: 'Taller dirigido por equipo PIE Colegio Nazaret',                                   icon: '♿' },
   { area: 'Docentes y Coordinadores TP', sede: 'C. Marista Hermano Fernando',                  taller: 'Formación e inducción en la metodología A+S',                           icon: '🏫' },
   { area: 'Educ. Parvularia',            sede: 'C. Católico Nazaret',                                                                                                          icon: '🌱' },
   { area: 'Inglés',                      sede: 'Liceo Bicentenario Sagrado Corazón de Jesús',                                                                                  icon: '🌐' },
-  { area: 'UTP/Equipos Técnicos',        sede: 'Liceo Bicentenario Nirvana',                   taller: 'Capacitación "Enfoque Docente y Aprendizaje Profundo" – Agencia de Calidad', icon: '⚙️' },
+  { area: 'UTP/Equipos Técnicos',        sede: 'C. Marista Hermano Fernando',                  taller: 'Formación e inducción en la metodología A+S',                           icon: '⚙️' },
   { area: 'Coordinadores Extraescolar',  sede: 'C. Monte Carmelo',                                                                                                             icon: '🎯' },
   { area: 'Directores y Directoras',     sede: 'C. Reina del Desierto',                                                                                                        icon: '👔' },
   { area: 'CGPA',                        sede: 'C. Bicentenario Kronos · 08:30 hrs',                                                                                           icon: '⭐' },
