@@ -9,6 +9,7 @@ const COLEGIOS = [
   { nombre: 'Colegio Diego Portales', comuna: 'Alto Hospicio' },
   { nombre: 'Colegio Domingo Savio', comuna: 'Alto Hospicio' },
   { nombre: 'Colegio Los Cóndores', comuna: 'Alto Hospicio' },
+  { nombre: 'Colegio Macaya', comuna: 'Alto Hospicio' },
   { nombre: 'Colegio Marista Hermano Fernando', comuna: 'Alto Hospicio' },
   { nombre: 'Colegio Metodista Robert Johnson', comuna: 'Alto Hospicio' },
   { nombre: 'Colegio Monte Carmelo', comuna: 'Alto Hospicio' },
@@ -24,6 +25,7 @@ const COLEGIOS = [
   { nombre: 'Escuela El Inca', comuna: 'Alto Hospicio' },
   { nombre: 'Escuela Santa Laura', comuna: 'Alto Hospicio' },
   { nombre: 'Liceo Bicentenario Alto Hospicio', comuna: 'Alto Hospicio' },
+  { nombre: 'Liceo Bicentenario Juan Pablo II', comuna: 'Alto Hospicio' },
   { nombre: 'Liceo Jorge Alessandri Rodríguez', comuna: 'Alto Hospicio' },
   { nombre: 'Colegio Maranatha', comuna: 'Alto Hospicio' },
 
