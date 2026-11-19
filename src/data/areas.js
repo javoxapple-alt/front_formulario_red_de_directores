@@ -1,13 +1,14 @@
 const AREAS = [
-  { nombre: 'Convivencia Educativa',       sede: 'Colegio Metodista Robert Johnson',          taller: '2º taller con Doctor Francisco Leal (UTA)' },
-  { nombre: 'PIE',                          sede: 'Colegio Bicentenario William Taylor',       taller: 'Taller dirigido por equipo PIE Colegio Nazaret' },
-  { nombre: 'Docentes y Coordinadores TP', sede: 'Colegio Marista Hermano Fernando',          taller: 'Talleres de formación e inducción en la metodología A+S' },
-  { nombre: 'Educ. Parvularia',            sede: 'Colegio Católico Nazaret' },
-  { nombre: 'Inglés',                      sede: 'Liceo Bicentenario Sagrado Corazón de Jesús' },
-  { nombre: 'UTP/Equipos Técnicos',        sede: 'Colegio Marista Hermano Fernando',          taller: 'Talleres de formación e inducción en la metodología A+S' },
-  { nombre: 'Coordinadores Extraescolar',  sede: 'Colegio Monte Carmelo' },
-  { nombre: 'Directores y Directoras',     sede: 'Colegio Reina del Desierto' },
-  { nombre: 'CGPA',                        sede: 'Colegio Bicentenario Kronos (08:30 hrs)' },
+  { nombre: 'Convivencia Educativa',          sede: 'Colegio Bicentenario William Taylor' },
+  { nombre: 'PIE',                             sede: 'Liceo Bicentenario Minero S.S. Juan Pablo II' },
+  { nombre: 'UTP/Equipos Técnicos Pedagógicos', sede: 'Colegio Monte Carmelo' },
+  { nombre: 'Coordinadores TP',                sede: 'Colegio Metodista Robert Johnson' },
+  { nombre: 'Educadoras de Párvulos',          sede: 'Liceo Bicentenario Nirvana' },
+  { nombre: 'Inglés',                          sede: 'Liceo Bicentenario Kronos' },
+  { nombre: 'Coordinadores Extraescolar',      sede: 'Colegio Marista Hermano Fernando' },
+  { nombre: 'Encargados de Seguridad PISE',    sede: 'Colegio San Antonio de Matilla',      taller: 'Taller con la Municipalidad' },
+  { nombre: 'Directores y Directoras',         sede: 'Colegio Maran-Atha' },
+  { nombre: 'CGPA',                            sede: 'Colegio Salesiano Domingo Savio (08:30 hrs)' },
 ];
 
 export default AREAS;
