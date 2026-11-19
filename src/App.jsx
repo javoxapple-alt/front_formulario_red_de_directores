@@ -35,12 +35,12 @@ function Header() {
             </svg>
           </div>
           <div>
-            <h1 className="brand-title">IV Encuentro de la Red</h1>
+            <h1 className="brand-title">V Encuentro de la Red</h1>
             <p className="brand-sub">Red de Colegios de Alto Hospicio · 2026</p>
           </div>
         </div>
         <div className="header-date">
-          <span className="date-badge">📅 Jueves 29 de Octubre · 14:30 – 17:00 hrs</span>
+          <span className="date-badge">📅 Martes 24 de Noviembre · 14:30 – 17:00 hrs</span>
         </div>
       </div>
       <nav className="app-nav">
@@ -70,15 +70,16 @@ function Header() {
 }
 
 const AREAS_INFO = [
-  { area: 'Convivencia Educativa',       sede: 'C. Metodista Robert Johnson',                  taller: '2º taller con Dr. Francisco Leal (UTA)',                                  icon: '🤝' },
-  { area: 'PIE',                          sede: 'C. Bicentenario William Taylor',               taller: 'Taller dirigido por equipo PIE Colegio Nazaret',                                   icon: '♿' },
-  { area: 'Docentes y Coordinadores TP', sede: 'C. Marista Hermano Fernando',                  taller: 'Formación e inducción en la metodología A+S',                           icon: '🏫' },
-  { area: 'Educ. Parvularia',            sede: 'C. Católico Nazaret',                                                                                                          icon: '🌱' },
-  { area: 'Inglés',                      sede: 'Liceo Bicentenario Sagrado Corazón de Jesús',                                                                                  icon: '🌐' },
-  { area: 'UTP/Equipos Técnicos',        sede: 'C. Marista Hermano Fernando',                  taller: 'Formación e inducción en la metodología A+S',                           icon: '⚙️' },
-  { area: 'Coordinadores Extraescolar',  sede: 'C. Monte Carmelo',                                                                                                             icon: '🎯' },
-  { area: 'Directores y Directoras',     sede: 'C. Reina del Desierto',                                                                                                        icon: '👔' },
-  { area: 'CGPA',                        sede: 'C. Bicentenario Kronos · 08:30 hrs',                                                                                           icon: '⭐' },
+  { area: 'Convivencia Educativa',            sede: 'C. Bicentenario William Taylor',                                       icon: '🤝' },
+  { area: 'PIE',                               sede: 'L. Bicentenario Minero S.S. Juan Pablo II',                            icon: '♿' },
+  { area: 'UTP/Equipos Técnicos Pedagógicos',  sede: 'C. Monte Carmelo',                                                     icon: '⚙️' },
+  { area: 'Coordinadores TP',                  sede: 'C. Metodista Robert Johnson',                                          icon: '🏫' },
+  { area: 'Educadoras de Párvulos',            sede: 'L. Bicentenario Nirvana',                                              icon: '🌱' },
+  { area: 'Inglés',                            sede: 'L. Bicentenario Kronos',                                               icon: '🌐' },
+  { area: 'Coordinadores Extraescolar',        sede: 'C. Marista Hermano Fernando',                                          icon: '🎯' },
+  { area: 'Encargados de Seguridad PISE',      sede: 'C. San Antonio de Matilla',      taller: 'Taller con la Municipalidad', icon: '🦺' },
+  { area: 'Directores y Directoras',           sede: 'C. Maran-Atha',                                                        icon: '👔' },
+  { area: 'CGPA',                              sede: 'C. Salesiano Domingo Savio · 08:30 hrs',                                icon: '⭐' },
 ];
 
 function RegisterPage({ onSuccess }) {
@@ -103,7 +104,7 @@ function RegisterPage({ onSuccess }) {
           <div className="event-details">
             <div className="detail-item">
               <div className="detail-icon-wrap">📅</div>
-              <div><strong>Fecha</strong><span>Jueves 29 de Octubre, 2026</span></div>
+              <div><strong>Fecha</strong><span>Martes 24 de Noviembre, 2026</span></div>
             </div>
             <div className="detail-item">
               <div className="detail-icon-wrap">🕐</div>
@@ -146,7 +147,7 @@ function ParticipantsPage({ refreshKey }) {
     <div className="page-single">
       <div className="page-title-bar">
         <h2>Participantes registrados</h2>
-        <p>Listado completo de inscritos al IV Encuentro de la Red 2026</p>
+        <p>Listado completo de inscritos al V Encuentro de la Red 2026</p>
       </div>
       <ParticipantsList refreshKey={refreshKey} />
     </div>
