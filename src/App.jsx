@@ -76,6 +76,8 @@ const AREAS_INFO = [
   { area: 'Coordinadores TP',                  sede: 'C. Metodista Robert Johnson',                                          icon: '🏫' },
   { area: 'Educadoras de Párvulos',            sede: 'L. Bicentenario Nirvana',                                              icon: '🌱' },
   { area: 'Inglés',                            sede: 'L. Bicentenario Kronos',                                               icon: '🌐' },
+  { area: 'Nodo Educadoras de Párvulo TP',     sede: 'Sede por confirmar',                                           icon: '🧸' },
+  { area: 'Nodo Salud',                        sede: 'Sede por confirmar',                                           icon: '🩺' },
   { area: 'Coordinadores Extraescolar',        sede: 'C. Marista Hermano Fernando',                                          icon: '🎯' },
   { area: 'Encargados de Seguridad PISE',      sede: 'C. San Antonio de Matilla',      taller: 'Taller con la Municipalidad', icon: '🦺' },
   { area: 'Directores y Directoras',           sede: 'C. Maran-Atha',                                                        icon: '👔' },
