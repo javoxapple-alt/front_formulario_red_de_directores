@@ -7,7 +7,7 @@ import './ParticipantsList.css';
 
 const AREA_COLORS = [
   '#1e4fc2','#7c3aed','#db2777','#d97706',
-  '#059669','#0284c7','#dc2626','#047857','#b45309',
+  '#059669','#0284c7','#dc2626','#047857','#b45309','#0f766e',
 ];
 
 export default function ParticipantsList({ refreshKey }) {
